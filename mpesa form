@@ -1,0 +1,91 @@
+<!------------MPESA STK FORM ------------>
+<!-- form -->
+
+<form class="needs-validation"  action="{{ route('lipa', $total )}}"  method="POST" id="recap">
+               @csrf
+
+             <input type="phone" id="phone" class="inpt"
+             name="phone">
+                
+            
+                        </div>
+                        </div>
+
+                        </div>
+                        </div>
+                        </div>
+
+
+
+                        </div><!-- end of left side -->
+
+
+                        <div class="col-md-6"> <!-- start of the right side -->
+
+
+
+                        <!-- your subtotals -->
+                        <div class="container" style="margin-top:130px">
+                        <p class="psi">Your Order</p>
+                        </div>
+
+                        <div class="container">
+                        <div class="row">
+                        
+                          <div class="col-md-10">
+                        <div class="extraprddetailtitlebox">
+                        <p class="extraprddetail">Subtotal</p>
+                        <p class="extraprddetail">Delivery fee</p>
+                        </div>
+                        </div>
+
+                        <div class="col-md-2">
+                        <div class="extraprddetailbox">
+
+                        <p class="extraprddetail">Ksh. {{ $total }}</p>
+                        <p class="extraprddetail">Ksh. 88</p>
+                        </div>
+                        <div>
+
+                        </div>
+                        </div>
+
+                        <!-- end--->
+                        <div class="container">
+                        <div class="Line1"></div></div>
+
+                        <!--total -->
+                        <div class="container">
+                        <div class="row">
+                        
+                          <div class="col-md-9">
+                        <div class="extraprddetailtitlebox">
+                        <p class="ttl">Total</p>
+                       
+                        </div>
+                        </div>
+
+                        <div class="col-md-3">
+                        <div class="extraprddetailbox">
+                        <p class="ttl">Ksh. {{ $total+88 }}</p>
+                        </div>
+                        <div>
+
+
+                        </div>
+                        </div>
+                        <!-- end -->
+
+                                  
+                            
+
+                        <!-- button -->
+                        <button class="btn btn-primary btn-lg btn-block" 
+                                        type="submit" >@lang('Pay Now')</button>
+
+
+
+<!-- end -->
+
+</form>
+<!--END FORM -------------------------------------------------------->
